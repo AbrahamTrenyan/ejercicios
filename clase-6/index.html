@@ -9,15 +9,19 @@
   <body>
     <form id="form-cantidad-integrantes">
       <label>Ingrese la cantidad de miembros de la familia</label>
-      <input type="number" id="cantidad-integrantes" />
+      <input type="number" id="cantidad-integrantes" required />
       <button type="submit" id="boton-crear">Crear campos</button>
-      <button type="button" onclick="location.reload()">Resetear</button>
+      <button type="button" id="boton-resetear" onclick="location.reload()">
+        Resetear
+      </button>
     </form>
     <form id="integrantes"></form>
     <div>
-      <p id="datos"></p>
+      <p id="datos-edades"></p>
+      <p id="datos-salarios"></p>
     </div>
     <script src="./calculos.js"></script>
     <script src="./edades.js"></script>
+    <script src="./sueldos.js"></script>
   </body>
 </html>
